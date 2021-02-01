@@ -150,7 +150,7 @@ The famous evolutionary biologists Dobzhansky once said that ``Nothing in biolog
 \caption{A diagram that shows inheritance, variation, and selection being applied.~\cite{evolDiagram}}
 \label{fig:evolution}
 \end{figure}
-%https://en.wikipedia.org/wiki/Evolution#/media/File:Mutation_and_selection_diagram.svg
+
 We talk about evolution, but what really is it?  And how does it actually work?
 Evolution is the theory that explains the ``Artenfrage''~\cite{darwin2004origin}, that is: why is Nature so diverse, while each species is so distinctly different? Darwin proposed a simple mechanism comprised of three necessary and independent principles~\cite{huxley1942evolution}: Inheritance, variation and natural selection (see Figure \ref{fig:evolution}). 
 Since this work deals with a computational system, and the term ``natural'' is already questionable, from now on the term selection is used instead of ``natural selection''.
@@ -172,7 +172,7 @@ Technically, inheritance explains why we have more than a single life form but m
 \caption{An image that shows the various different beaks that are known as Darwin's finches~\cite{DarwinsFinches}}
 \label{fig:darwinsfinches}
 \end{figure}
-%https://upload.wikimedia.org/wikipedia/commons/a/ae/Darwin%27s_finches_by_Gould.jpg
+
 
 Inheritance and variation alone would create a planet populated with many different organisms, all randomly different from each other. However, we observe discrete species, with most of their individuals sharing many traits, while also being distinctly different from other species. A pure random process would not explain speciation and the type of complexity we observe.
 
@@ -198,7 +198,7 @@ Simulation is originally meant to describe the process of writing a program or s
 \caption{A drawing of the Mechanical Turk, a device that pretended to play chess animatedly.~\cite{mechTurk}}
 \label{fig:mechanica_turk}
 \end{figure}
-%https://en.wikipedia.org/wiki/The_Turk
+
 
 Modeling on the other hand is meant to be real. To follow reality not just in its visualization, but also in the processes behind it and leading up to it. Modeling is supposed to not just look real but also behave like reality even after leaving the scripted environment to which simulations are limited. An actual chess computer indeed plays chess using electronic computation, and is not ``faking'' intelligence. It actually plays chess. In the context of evolutionary modeling, this contrast is more obvious. Instead of pretending that something evolves, computer code or strings of virtual DNA actually experience inheritance, selection, and variation and thus do evolve. Evolution inside a model, if done properly, becomes an instance of evolution and not a simulation ~\cite{Pennock:2007iy}. This is what MABE~\cite{bohm2017mabe,MABE2016} is striving for, to create and experience real evolution and study it's results.
 
@@ -213,7 +213,7 @@ Among the many computational tools to study evolution (AVIDA~\cite{adami1994evol
 we also find MABE: the Modular Agent-Based Evolution platform developed by the Hintze Lab~\cite{MABE2016,bohm2017mabe}. This MABE platform is built in a modular fashion. These modules can be modified or new ones can be added. This makes MABE a convenient tool to create new experiments, reuse code from others, and to extend previous work. 
 Sharing work, results, and entire experiments with MABE is very easy, because of its modular architecture. The plug and play principle is a big leap into the right direction. MABE is making the process a lot less tedious, even combining projects is no problem anymore, since again, modules simplify the process immensely.
 
-%----- Experiemente können kombiniert werden und sachen getauscht werden mit anderen leuten
+
 
 \newpage
 \section{MABE}
@@ -225,11 +225,12 @@ MABE is made up of multiple modules (see Figure \ref{fig:MABE_Modules}) that are
 \caption{A diagram of the modules in MABE and how they relate to one another.~\cite{mabeModuleChart}}
 \label{fig:MABE_Modules}
 \end{figure}
-%https://raw.githubusercontent.com/wiki/Hintze Lab/MABE/images/MABE_Overview.png
+
 
 \subsubsection{Brains}
-Brains in MABE process inputs to then give outputs which are part of a continuous list of values. Just like in nature, MABE brains can be vastly different in how they operate. Brains differ in the way they process data. Most commonly internal algorithms are used for that. Just like in Markov brains~\cite{hintze2017markov} and in Neural Networks~\cite{russell1995modern}, the way in which these can compute their outputs are only limited in the power of the PC at hand. The ways in which mutation is implemented into these brains is usually either with genomes being mutated, out of which the brain is then being built, or by using a random process to create a brain without genomes, using direct encoding. %Ausschmücken
-Usually a brain will not know anything about the circumstances around them, like the genomes building them, the world it is in, or what is is being critiqued on exactly. Therefore the brain doesn't care about the environment or world it is in, which means, that they generally work in any setting in which they are being implemented in. %Ausschmücken
+Brains in MABE process inputs to then give outputs which are part of a continuous list of values. Just like in nature, MABE brains can be vastly different in how they operate. Brains differ in the way they process data. Most commonly internal algorithms are used for that. Just like in Markov brains~\cite{hintze2017markov} and in Neural Networks~\cite{russell1995modern}, the way in which these can compute their outputs are only limited in the power of the PC at hand. The ways in which mutation is implemented into these brains is usually either with genomes being mutated, out of which the brain is then being built, or by using a random process to create a brain without genomes, using direct encoding. 
+Usually a brain will not know anything about the circumstances around them, like the genomes building them, the world it is in, or what is is being critiqued on exactly. Therefore the brain doesn't care about the environment or world it is in, which means, that they generally work in any setting in which they are being implemented in. 
+
 Some of the brains already included with MABE are Markov brains~\cite{hintze2017markov}, Artificial Neural Networks~\cite{russell1995modern}, and CGP~\cite{miller2008cartesian}, just to name a few. 
 \newpage
 \textbf{Markov Brains} have different gates that receive inputs and then generate outputs using them. These are run in parallel and then the output of all gates is combined, which is usually done by summation.
@@ -307,7 +308,7 @@ Similarly, many evolutionary hypotheses address the coevolution of brain and bod
 \caption{An image depicting an Ankylosaurus with it's bony bulge on it's tail.~\cite{dino}}
 \label{fig:Ankylosaurus_dinosaur}
 \end{figure}
-%https://en.wikipedia.org/wiki/Ankylosaurus#/media/File:Ankylosaurus_dinosaur.png
+
 
 \subsubsection{Can we answer questions from the past 100\% accurately that way?}
 While making definite answers for what happened in the past might still not always be possible using models, and telling the future also isn't exactly possible, we can make very educated guesses what evolution did and will do and why, given we know the circumstances it all happened under. 
@@ -331,7 +332,7 @@ Karl Sims is a computer graphics artist but most famously known for his work and
 \caption{A picture of Sims so called critters, organisms that he virtually evolved.~\cite{critterssims}}
 \label{fig:SimsCritters}
 \end{figure}
-%https://archive.org/services/img/sims_evolved_virtual_creatures_1994&scale=2
+
 
 Sims counts as one of the forerunners and pioneers in the field of artificial life and its evolution. He has published three papers on the topic in the early to mid nineties. The most critical aspect of his work is probably the evolution of morphology and behavior in a 3D physics environment.
 
@@ -344,7 +345,7 @@ One big advantage that Polyworld has over Karl Sims simulations is that all the 
 \caption{A screenshot of Polyworld, Larry Yaeger's software to evolve AI.~\cite{polypicture}}
 \label{fig:Polyworld}
 \end{figure}
-%http://shinyverse.org/larryy/Polyworld_files/image001.png
+
 
 \newpage
 
@@ -357,7 +358,7 @@ Only a couple of years after the release of Polyworld, in late 1996, a new piece
 \caption{A picture of an organism within Framsticks, a tool for artificially evolution.~\cite{frampic}}
 \label{fig:Framsticks}
 \end{figure}
-%http://www.framsticks.com/files/common/slideD1.jpg
+
 
 \section{Goal: DART integration into MABE}
 All of the previously mentioned models are special purpose tools to study one thing. Their results are difficult to share, and they are difficult to change or modify, which is why the Hintze Lab strives to create a tool that runs without all the beforementioned disadvantages. The goal was to create an open source, and therefore free of charge tool. With it being open source and on GitHub for everybody to see, sharing and changing it are as simple as ever. On top of that, MABE is modular and allows for many different blocks to be used. Different Brains and worlds open the door to countless different experiments, which can be fundamentally different.
@@ -381,16 +382,15 @@ DART in itself provides a huge selection of features that allow for complex and 
 
 \newpage
 
-The following pages will describe how DART was integrated into MABE, including the pre-DART steps, failures, bugs and errors, how one can design environments with it, and how these environments could be used to coevolve the brain and bodies of virtual critters in this 3D physics environment. This is followed by a couple of experiments that first test the integration of Dart into MABE, and then experiments that exemplify how one can use the newly added module to create evolutionary experiments. %This thesis will conclude with findings about how diversity of evolved solutions depends on the complexity of the environment, reaffirming the initial argument that we need more complex environments to study evolution better.
+The following pages will describe how DART was integrated into MABE, including the pre-DART steps, failures, bugs and errors, how one can design environments with it, and how these environments could be used to coevolve the brain and bodies of virtual critters in this 3D physics environment. This is followed by a couple of experiments that first test the integration of Dart into MABE, and then experiments that exemplify how one can use the newly added module to create evolutionary experiments. 
 
 \chapter{Material, Methods, and Implementation}
 
 
-%\chapter{Implementation}
 \section{Godot}
 In search for a physics engine, our first stop was Godot \cite{linietsky2007godot}. A free game engine that comes with softbodies in its latest beta releases and  also allows for scripting using C++, which is called gdnative. The first step was to get Godot installed and up and running in both versions, the stable release and the beta, in which we can test with softbodies. The next step was to get somewhat familiar with gdnative, which we did by going through the tutorials and examples given on their official website. 
 After all that was done, we had to figure out how softbodies work and how to make them do what we intended. Using the GUI proved most useful during that period in which, after a week of experimenting and testing we finally had to accept the fact that Godot won't actually work, even though it had looked very promising at first. 
-The way the testing in godot happened was rather simple. As stated above, we made use of godot's graphical user interface and the ``play'' option, which renders out the scene and applies physics to all the objects. A ``course'' has been set up for the objects to traverse, which means they will fall down a set of slopes (see Figure \ref{fig:Godot}). The goal for this scenario was to create a course that was simple to observe by eye but still complex enough to make it clear if physics are being applied correctly to the soft bodies. There were three slopes, which led to each other downwards, with the objects being spawned above the first slope. This allowed for very simple testing as to how physics operate. %Umschreiben/Ausschmücken
+The way the testing in godot happened was rather simple. As stated above, we made use of godot's graphical user interface and the ``play'' option, which renders out the scene and applies physics to all the objects. A ``course'' has been set up for the objects to traverse, which means they will fall down a set of slopes (see Figure \ref{fig:Godot}). The goal for this scenario was to create a course that was simple to observe by eye but still complex enough to make it clear if physics are being applied correctly to the soft bodies. There were three slopes, which led to each other downwards, with the objects being spawned above the first slope. This allowed for very simple testing as to how physics operate. 
 
 \begin{figure}[h!]
 \centering
@@ -740,7 +740,7 @@ We will begin with the number of elements our caterpillar was made out of. We le
 \label{fig:parts_bars}
 \end{figure}
 
-%IS THIS RIGHT LIKE THIS? - FEELS FILLERY
+
 \subsubsection{Results}
 As expected, the shortest caterpillar performed the worst with a score considerably lower than it's competitors. Up to four body parts the fitness kept on increasing, but with the fifth part added it started declining. This means that in the range tested, four parts would prevail over time. It could be due to the fact that it was not yet too long and complex but just long enough to perform a reliable motion.
 
@@ -787,7 +787,7 @@ And this data is more interesting and usable. When looking into the paths taken 
 }
 
 
-\subsubsection{Bug during experiment} %OK?? Writing about this kind of stuff
+\subsubsection{Bug during experiment} 
 After having run the experiment once I began plotting the data generated and soon had to find out that there was a bug in the code that falsified all the results the run had generated. I saw that the resetting function for the position did work in theory, but it did not reset the caterpillar centered, and it did not even spawn that way the first time around (see Figure \ref{fig:TwoPartsBugged}). That meant that something must be wrong fundamentally.
 The more body parts the caterpillar had, which means the longer the caterpillar was, the further back it was in the opposite direction to scoring. This meant that longer caterpillars spent a considerable amount of time evolving with 0 score, since they had to move quite far to even gain minimal score improvements.
 All other plots (except for Figure \ref{fig:TwoPartsBugged}) in this paper were created or replaced with the fixed and updated version.
@@ -871,9 +871,7 @@ We can again compare the path taken, represented by a single high scoring organi
 
 Again the observation can be made that multiple organisms are still within the population that seem to have found a way to reach peak performance or very close to it. Since mutation was enabled, running the experiment longer would not resolve this ``issue'', since fixation would never be reached. 
 
-%Bevor HPCC immer noch alles so ein wenig proof of concept. Man lernt aus fehlern und so.
-%Ihnalt nicht so wichtig -> funktioniert!!
-%Alles klappt, yeah!
+
 
 
 \subsubsection{HPCC} \label{sssec:hpcc}
@@ -970,4 +968,3 @@ Kempten, March 12th 2019
 
 \end{document}
 
-%Explain code in more detail like for example the reset function
