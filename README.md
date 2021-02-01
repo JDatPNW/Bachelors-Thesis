@@ -1,2 +1,2 @@
-# Bachelor-s-Thesis
-Latex for Thesis
+# Bachelors-Thesis
+Latex of my BSc Thesis
